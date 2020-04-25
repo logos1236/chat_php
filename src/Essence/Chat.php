@@ -59,8 +59,6 @@ class Chat {
     public static function setMessage($data_query = array()) {
         //=== Подключение к базе
         $connection = Connection::connect();
-        
-        print_r($connection);
 
         if (!($data_query['user_author'])) {
             throw new \Exception('Empty user_author');
@@ -80,7 +78,7 @@ class Chat {
         } else {
             $result['error'][] = "Ошибка записи";
         }
-
+        
         //=== Возвращаем значения
         return $result;
     }
@@ -100,7 +98,7 @@ class Chat {
         $order_by = "";
         
         //=== Сортировка
-            $order_by = "ORDER BY date ASC ";
+            $order_by = "ORDER BY id ";
             
         //=== Дополнительные поля  
             /*if (!empty($additional_select)) {
@@ -147,9 +145,9 @@ class Chat {
 
         
         
-        //=== SQL
+        //=== SQL            
         if ($result_query = mysqli_query($connection, $sql_query)) {
-            while ($item = $result_query->fetch_assoc()) {                
+            while ($item = $result_query->fetch_assoc()) {  
                 if ($get_count_element == FALSE) {
                     $result['list'][] = $item;
                     $result['count']++;

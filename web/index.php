@@ -18,9 +18,5 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/core/init.php';
 Project\Chat::setMessage($data_query);*/
 
 $message_list = Project\Chat::getMessageList($filter = array(), $additional_select = array(), $order = array(), $count = FALSE, $page = 1, $get_count_element = FALSE);
-
 print_r($message_list);
-
-//=== Close connection
-Connection::close();
 ?>
