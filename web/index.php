@@ -1,10 +1,7 @@
+<?
+require_once $_SERVER['DOCUMENT_ROOT'] . '/templates/default/header.php';
+?>
 <? 
-ini_set('error_reporting', E_ALL);
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-
-require_once $_SERVER['DOCUMENT_ROOT'] . '/core/init.php';
-
 //Project\User::createTable();
 
 //Project\Chat::createTable();
@@ -19,4 +16,7 @@ Project\Chat::setMessage($data_query);*/
 
 $message_list = Project\Chat::getMessageList($filter = array(), $additional_select = array(), $order = array(), $count = FALSE, $page = 1, $get_count_element = FALSE);
 print_r($message_list);
+?>
+<?
+require_once $_SERVER['DOCUMENT_ROOT'] . '/templates/default/footer.php';
 ?>

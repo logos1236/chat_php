@@ -31,6 +31,8 @@ class Chat {
         } else {
             echo "False table create.";
         }
+        
+        Connection::close();
 
         //=== Возвращаем значения
         return $result;
@@ -50,6 +52,8 @@ class Chat {
         } else {
             echo "False table drop.";
         }
+        
+        Connection::close();
 
         //=== Возвращаем значения
         return $result;
@@ -79,6 +83,8 @@ class Chat {
             $result['error'][] = "Ошибка записи";
         }
         
+        Connection::close();
+        
         //=== Возвращаем значения
         return $result;
     }
@@ -106,12 +112,19 @@ class Chat {
             }*/
             
         //=== Фильтрация    
-            //=== Фильтр по id
-                /*unset($input_name);
+            //=== По id
+                unset($input_name);
                 $input_name = 'id'; 
-                if ($filter[$input_name] != "") {
-                    $filter_additional .= "AND (id = ".(int)$filter[$input_name].")";
-                }*/    
+                if ($filter[$input_name]>0) {
+                    $filter_additional .= "AND (id > ".(int)$filter[$input_name].")";
+                }
+                
+            //=== По id чата
+                unset($input_name);
+                $input_name = 'chat_id'; 
+                if ($filter[$input_name]>0) {
+                    $filter_additional .= "AND (chat_id = ".(int)$filter[$input_name].")";
+                }     
             
         //=== Пагинация
             $limit = "";
@@ -136,6 +149,7 @@ class Chat {
             $sql_query = "SELECT 
                             ".$sql_get."
                         FROM `".self::getTableName()."`
+                        WHERE id > 0  
                         ".$filter_additional."
                         ".$group_by."
                         ".$order_by." 
@@ -156,6 +170,8 @@ class Chat {
                 }
             }
         }
+        
+        Connection::close();
 
         //=== Возвращаем значения
         return $result;
