@@ -104,7 +104,7 @@ class Chat {
         $order_by = "";
         
         //=== Сортировка
-            $order_by = "ORDER BY id ";
+            $order_by = "ORDER BY id DESC";
             
         //=== Дополнительные поля  
             /*if (!empty($additional_select)) {

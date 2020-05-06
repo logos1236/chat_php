@@ -1,0 +1,574 @@
+2020-05-05 04:50:51 pid:11655 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-05 04:51:27 pid:11663 Workerman[ChatWorker.php] stop 
+2020-05-05 04:51:27 pid:11663 Workerman[ChatWorker.php] not run
+2020-05-05 04:52:39 pid:11747 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-05 04:55:10 pid:11861 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-05 04:57:03 pid:11861 Workerman[ChatWorker.php] stopping ...
+2020-05-05 04:57:03 pid:11861 Workerman[ChatWorker.php] has been stopped
+2020-05-05 04:58:01 pid:11896 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-05 04:58:45 pid:11896 Workerman[ChatWorker.php] stopping ...
+2020-05-05 04:58:45 pid:11896 Workerman[ChatWorker.php] has been stopped
+2020-05-05 18:24:57 pid:10271 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-05 18:27:44 pid:10271 Workerman[ChatWorker.php] stopping ...
+2020-05-05 18:27:44 pid:10271 Workerman[ChatWorker.php] has been stopped
+2020-05-05 18:37:08 pid:10417 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-05 18:44:24 pid:10417 Workerman[ChatWorker.php] stopping ...
+2020-05-05 18:44:24 pid:10417 Workerman[ChatWorker.php] has been stopped
+2020-05-05 18:44:25 pid:10991 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-05 18:44:58 pid:10991 Workerman[ChatWorker.php] stopping ...
+2020-05-05 18:44:58 pid:10991 Workerman[ChatWorker.php] has been stopped
+2020-05-05 18:44:59 pid:11005 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-05 18:46:08 pid:11005 Workerman[ChatWorker.php] stopping ...
+2020-05-05 18:46:08 pid:11005 Workerman[ChatWorker.php] has been stopped
+2020-05-05 18:59:11 pid:11123 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-05 19:00:52 pid:11123 Workerman[ChatWorker.php] stopping ...
+2020-05-05 19:00:52 pid:11123 Workerman[ChatWorker.php] has been stopped
+2020-05-05 19:01:33 pid:11153 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-05 19:39:01 pid:11153 Workerman[ChatWorker.php] stopping ...
+2020-05-05 19:39:01 pid:11153 Workerman[ChatWorker.php] has been stopped
+2020-05-05 19:43:52 pid:12600 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-05 19:51:15 pid:12600 Workerman[ChatWorker.php] stopping ...
+2020-05-05 19:51:15 pid:12600 Workerman[ChatWorker.php] has been stopped
+2020-05-05 19:51:30 pid:13184 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-05 19:52:14 pid:13184 Workerman[ChatWorker.php] stopping ...
+2020-05-05 19:52:14 pid:13184 Workerman[ChatWorker.php] has been stopped
+2020-05-05 19:52:40 pid:13270 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-05 20:54:05 pid:13270 Workerman[ChatWorker.php] stopping ...
+2020-05-05 20:54:05 pid:13270 Workerman[ChatWorker.php] has been stopped
+2020-05-05 20:54:07 pid:14227 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-05 23:23:36 pid:3737 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-05 23:28:55 pid:3737 Workerman[ChatWorker.php] stopping ...
+2020-05-05 23:28:55 pid:3737 Workerman[ChatWorker.php] has been stopped
+2020-05-05 23:29:16 pid:4200 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-06 00:00:34 pid:4200 Workerman[ChatWorker.php] stopping ...
+2020-05-06 00:00:34 pid:4200 Workerman[ChatWorker.php] has been stopped
+2020-05-06 00:01:00 pid:5257 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-06 00:03:51 pid:5257 Workerman[ChatWorker.php] stopping ...
+2020-05-06 00:03:51 pid:5257 Workerman[ChatWorker.php] has been stopped
+2020-05-06 00:04:50 pid:5431 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-06 00:05:52 pid:5431 Workerman[ChatWorker.php] stopping ...
+2020-05-06 00:05:52 pid:5431 Workerman[ChatWorker.php] has been stopped
+2020-05-06 00:05:55 pid:5551 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-06 00:08:48 pid:5551 Workerman[ChatWorker.php] stopping ...
+2020-05-06 00:08:48 pid:5551 Workerman[ChatWorker.php] has been stopped
+2020-05-06 00:09:07 pid:5774 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-06 00:17:07 pid:5774 Workerman[ChatWorker.php] stopping ...
+2020-05-06 00:17:07 pid:5774 Workerman[ChatWorker.php] has been stopped
+2020-05-06 00:17:12 pid:6748 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-06 02:48:03 pid:6749 Exception: Empty user_author in /var/www/chat_server/chat_php/src/Essence/Chat.php:68
+Stack trace:
+#0 /var/www/chat_server/chat_php/web/socket/ChatWorker.php(210): Project\Chat::setMessage(Array)
+#1 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Connection/TcpConnection.php(660): {closure}(Object(Workerman\Connection\TcpConnection), 'CONNECT\nheart-b...')
+#2 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Events/Select.php(292): Workerman\Connection\TcpConnection->baseRead(Resource id #51)
+#3 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Worker.php(2408): Workerman\Events\Select->loop()
+#4 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Worker.php(1541): Workerman\Worker->run()
+#5 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#6 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Worker.php(1345): Workerman\Worker::forkWorkersForLinux()
+#7 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Worker.php(546): Workerman\Worker::forkWorkers()
+#8 /var/www/chat_server/chat_php/web/socket/ChatWorker.php(253): Workerman\Worker::runAll()
+#9 {main}
+2020-05-06 02:48:03 pid:6749 Worker[6749] process terminated
+2020-05-06 02:48:03 pid:6748 worker[none:6749] exit with status 64000
+2020-05-06 02:48:28 pid:6748 Workerman[ChatWorker.php] stopping ...
+2020-05-06 02:48:28 pid:6748 Workerman[ChatWorker.php] has been stopped
+2020-05-06 02:50:01 pid:14035 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-06 03:26:58 pid:14035 Workerman[ChatWorker.php] stopping ...
+2020-05-06 03:26:58 pid:14035 Workerman[ChatWorker.php] has been stopped
+2020-05-06 03:29:58 pid:15358 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-06 03:30:06 pid:15359 Exception: Empty user_author in /var/www/chat_server/chat_php/src/Essence/Chat.php:68
+Stack trace:
+#0 /var/www/chat_server/chat_php/web/socket/ChatWorker.php(210): Project\Chat::setMessage(Array)
+#1 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Connection/TcpConnection.php(660): {closure}(Object(Workerman\Connection\TcpConnection), 'CONNECT\nheart-b...')
+#2 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Events/Select.php(292): Workerman\Connection\TcpConnection->baseRead(Resource id #31)
+#3 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Worker.php(2408): Workerman\Events\Select->loop()
+#4 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Worker.php(1541): Workerman\Worker->run()
+#5 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#6 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Worker.php(1345): Workerman\Worker::forkWorkersForLinux()
+#7 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Worker.php(546): Workerman\Worker::forkWorkers()
+#8 /var/www/chat_server/chat_php/web/socket/ChatWorker.php(253): Workerman\Worker::runAll()
+#9 {main}
+2020-05-06 03:30:06 pid:15359 Worker[15359] process terminated
+2020-05-06 03:30:06 pid:15358 worker[none:15359] exit with status 64000
+2020-05-06 03:31:33 pid:15358 Workerman[ChatWorker.php] stopping ...
+2020-05-06 03:31:33 pid:15358 Workerman[ChatWorker.php] has been stopped
+2020-05-06 03:31:34 pid:15442 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-06 03:52:28 pid:15442 Workerman[ChatWorker.php] stopping ...
+2020-05-06 03:52:28 pid:15442 Workerman[ChatWorker.php] has been stopped
+2020-05-06 03:52:30 pid:16483 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-06 04:04:04 pid:16483 Workerman[ChatWorker.php] stopping ...
+2020-05-06 04:04:04 pid:16483 Workerman[ChatWorker.php] has been stopped
+2020-05-06 04:04:05 pid:16775 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-06 04:30:27 pid:16775 Workerman[ChatWorker.php] stopping ...
+2020-05-06 04:30:27 pid:16775 Workerman[ChatWorker.php] has been stopped
+2020-05-06 04:30:28 pid:18644 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-06 04:31:58 pid:18644 Workerman[ChatWorker.php] stopping ...
+2020-05-06 04:31:58 pid:18644 Workerman[ChatWorker.php] has been stopped
+2020-05-06 04:32:19 pid:18734 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-06 04:36:17 pid:18734 Workerman[ChatWorker.php] stopping ...
+2020-05-06 04:36:17 pid:18734 Workerman[ChatWorker.php] has been stopped
+2020-05-06 04:36:18 pid:18918 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-06 04:38:34 pid:18918 Workerman[ChatWorker.php] stopping ...
+2020-05-06 04:38:34 pid:18918 Workerman[ChatWorker.php] has been stopped
+2020-05-06 04:39:29 pid:19325 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-06 04:43:32 pid:19325 Workerman[ChatWorker.php] stopping ...
+2020-05-06 04:43:32 pid:19325 Workerman[ChatWorker.php] has been stopped
+2020-05-06 04:44:07 pid:19723 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-06 04:44:49 pid:19723 Workerman[ChatWorker.php] stopping ...
+2020-05-06 04:44:49 pid:19723 Workerman[ChatWorker.php] has been stopped
+2020-05-06 04:44:50 pid:19807 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-06 04:45:31 pid:19807 Workerman[ChatWorker.php] stopping ...
+2020-05-06 04:45:31 pid:19807 Workerman[ChatWorker.php] has been stopped
+2020-05-06 04:45:51 pid:19949 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-06 04:46:44 pid:19949 Workerman[ChatWorker.php] stopping ...
+2020-05-06 04:46:44 pid:19949 Workerman[ChatWorker.php] has been stopped
+2020-05-06 04:47:28 pid:20019 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-06 04:47:47 pid:20019 Workerman[ChatWorker.php] stopping ...
+2020-05-06 04:47:47 pid:20019 Workerman[ChatWorker.php] has been stopped
+2020-05-06 04:47:49 pid:20088 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-06 04:48:13 pid:20088 Workerman[ChatWorker.php] stopping ...
+2020-05-06 04:48:13 pid:20088 Workerman[ChatWorker.php] has been stopped
+2020-05-06 04:48:39 pid:20157 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-06 04:49:09 pid:20157 Workerman[ChatWorker.php] stopping ...
+2020-05-06 04:49:09 pid:20157 Workerman[ChatWorker.php] has been stopped
+2020-05-06 04:49:10 pid:20223 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-06 05:14:23 pid:20223 Workerman[ChatWorker.php] stopping ...
+2020-05-06 05:14:23 pid:20223 Workerman[ChatWorker.php] has been stopped
+2020-05-06 13:56:03 pid:4216 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-06 14:07:21 pid:2695 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-06 14:18:48 pid:2695 Workerman[ChatWorker.php] stopping ...
+2020-05-06 14:18:48 pid:2695 Workerman[ChatWorker.php] has been stopped
+2020-05-06 14:19:33 pid:3545 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-06 14:19:33 pid:3545 worker[none:3546] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3547] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3548] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3549] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3550] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3551] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3552] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3553] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3554] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3555] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3556] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3557] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3558] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3559] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3560] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3561] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3562] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3563] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3564] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3565] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3566] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3567] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3568] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3569] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3570] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3571] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3572] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3573] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3574] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3575] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3576] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3577] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3578] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3579] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3580] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3581] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3582] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3583] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3584] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3585] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3586] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3587] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3588] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3589] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3590] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3591] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3592] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3593] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3594] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3595] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3596] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3597] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3598] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3599] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3600] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3601] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3602] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3603] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3604] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3605] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3606] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3607] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3608] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3609] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3610] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3611] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3612] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3613] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3614] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3615] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3616] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3617] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3618] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3619] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3620] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3621] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3622] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3623] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3624] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3625] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3626] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3627] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3628] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3629] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3630] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3631] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3632] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3633] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3634] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3635] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3636] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3637] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3638] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3639] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3640] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3641] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3642] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3643] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3644] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3645] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3646] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3647] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3648] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3649] exit with status 65280
+2020-05-06 14:19:33 pid:3545 worker[none:3650] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3651] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3652] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3653] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3654] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3655] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3656] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3657] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3658] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3659] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3660] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3661] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3662] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3663] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3664] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3665] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3666] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3667] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3668] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3669] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3670] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3671] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3672] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3673] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3674] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3675] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3676] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3677] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3678] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3679] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3680] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3681] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3682] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3683] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3684] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3685] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3686] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3687] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3688] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3689] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3690] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3691] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3692] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3693] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3694] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3695] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3696] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3697] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3698] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3699] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3700] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3701] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3702] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3703] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3704] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3705] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3706] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3707] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3708] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3709] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3710] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3711] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3712] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3713] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3714] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3715] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3716] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3717] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3718] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3719] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3720] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3721] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3722] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3723] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3724] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3725] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3726] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3727] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3728] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3729] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3730] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3731] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3732] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3733] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3734] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3735] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3736] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3737] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3738] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3739] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3740] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3741] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3742] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3743] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3744] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3745] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3746] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3747] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3748] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3749] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3750] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3751] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3752] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3753] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3754] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3755] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3756] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3757] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3758] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3759] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3760] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3761] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3762] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3763] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3764] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3765] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3766] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3767] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3768] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3769] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3770] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3771] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3772] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3773] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3774] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3775] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3776] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3777] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3778] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3779] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3780] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3781] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3782] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3783] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3784] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3785] exit with status 65280
+2020-05-06 14:19:34 pid:3545 worker[none:3786] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3787] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3788] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3789] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3790] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3791] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3792] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3793] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3794] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3795] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3796] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3797] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3798] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3799] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3800] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3801] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3802] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3803] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3804] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3805] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3806] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3807] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3808] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3809] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3810] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3811] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3812] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3813] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3814] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3815] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3816] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3817] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3818] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3819] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3820] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3821] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3822] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3823] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3824] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3825] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3826] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3827] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3828] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3829] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3830] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3831] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3832] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3833] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3834] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3835] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3836] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3837] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3838] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3839] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3840] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3841] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3842] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3843] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3844] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3845] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3846] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3847] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3848] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3849] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3850] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3851] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3852] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3853] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3854] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3855] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3856] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3857] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3858] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3859] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3860] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3861] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3862] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3863] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3864] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3865] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3866] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3867] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3868] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3869] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3870] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3871] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3872] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3873] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3874] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3875] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3876] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3877] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3878] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3879] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3880] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3881] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3882] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3883] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3884] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3885] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3886] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3887] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3888] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3889] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3890] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3891] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3892] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3893] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3894] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3895] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3896] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3897] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3898] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3899] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3900] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3901] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3902] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3903] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3904] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3905] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3906] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3907] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3908] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3909] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3910] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3911] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3912] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3913] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3914] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3915] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3916] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3917] exit with status 65280
+2020-05-06 14:19:35 pid:3545 worker[none:3918] exit with status 65280
+2020-05-06 14:19:36 pid:3545 worker[none:3919] exit with status 65280
+2020-05-06 14:19:36 pid:3545 worker[none:3920] exit with status 65280
+2020-05-06 14:19:36 pid:3545 worker[none:3921] exit with status 65280
+2020-05-06 14:19:36 pid:3545 worker[none:3922] exit with status 65280
+2020-05-06 14:19:36 pid:3545 worker[none:3923] exit with status 65280
+2020-05-06 14:19:36 pid:3545 worker[none:3924] exit with status 65280
+2020-05-06 14:19:36 pid:3545 worker[none:3925] exit with status 65280
+2020-05-06 14:19:36 pid:3545 worker[none:3926] exit with status 65280
+2020-05-06 14:19:36 pid:3545 worker[none:3927] exit with status 65280
+2020-05-06 14:19:36 pid:3545 worker[none:3928] exit with status 65280
+2020-05-06 14:19:36 pid:3545 worker[none:3929] exit with status 65280
+2020-05-06 14:19:36 pid:3545 worker[none:3930] exit with status 65280
+2020-05-06 14:19:36 pid:3545 worker[none:3931] exit with status 65280
+2020-05-06 14:19:36 pid:3545 worker[none:3932] exit with status 65280
+2020-05-06 14:19:36 pid:3545 worker[none:3933] exit with status 65280
+2020-05-06 14:19:36 pid:3545 worker[none:3934] exit with status 65280
+2020-05-06 14:19:36 pid:3545 Workerman[ChatWorker.php] stopping ...
+2020-05-06 14:19:36 pid:3545 worker[none:3935] exit with status 65280
+2020-05-06 14:19:36 pid:3545 Workerman[ChatWorker.php] has been stopped
+2020-05-06 14:20:01 pid:3940 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-06 15:07:30 pid:3940 Workerman[ChatWorker.php] stopping ...
+2020-05-06 15:07:30 pid:3940 Workerman[ChatWorker.php] has been stopped
+2020-05-06 15:08:06 pid:8065 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-06 15:08:31 pid:8065 Workerman[ChatWorker.php] stopping ...
+2020-05-06 15:08:31 pid:8065 Workerman[ChatWorker.php] has been stopped
+2020-05-06 15:08:47 pid:8141 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-06 15:11:23 pid:8141 Workerman[ChatWorker.php] stopping ...
+2020-05-06 15:11:23 pid:8141 Workerman[ChatWorker.php] has been stopped
+2020-05-06 15:11:27 pid:8338 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-06 15:21:46 pid:8338 Workerman[ChatWorker.php] stopping ...
+2020-05-06 15:21:46 pid:8338 Workerman[ChatWorker.php] has been stopped
+2020-05-06 15:23:11 pid:8855 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-06 15:23:13 pid:8855 Workerman[ChatWorker.php] stopping ...
+2020-05-06 15:23:13 pid:8855 Workerman[ChatWorker.php] has been stopped
+2020-05-06 15:23:21 pid:8857 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-06 15:24:51 pid:8857 Workerman[ChatWorker.php] stopping ...
+2020-05-06 15:24:51 pid:8857 Workerman[ChatWorker.php] has been stopped
+2020-05-06 15:24:56 pid:8921 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-06 15:25:41 pid:8921 Workerman[ChatWorker.php] stopping ...
+2020-05-06 15:25:41 pid:8921 Workerman[ChatWorker.php] has been stopped
+2020-05-06 15:25:42 pid:9025 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-06 15:44:31 pid:9025 Workerman[ChatWorker.php] stopping ...
+2020-05-06 15:44:31 pid:9025 Workerman[ChatWorker.php] has been stopped
+2020-05-06 15:44:58 pid:9912 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-06 15:47:25 pid:9912 Workerman[ChatWorker.php] stopping ...
+2020-05-06 15:47:25 pid:9912 Workerman[ChatWorker.php] has been stopped
+2020-05-06 15:54:00 pid:10346 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-06 17:04:07 pid:10346 Workerman[ChatWorker.php] stopping ...
+2020-05-06 17:04:07 pid:10346 Workerman[ChatWorker.php] has been stopped
+2020-05-06 17:04:08 pid:11911 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-06 17:08:04 pid:11911 Workerman[ChatWorker.php] stopping ...
+2020-05-06 17:08:04 pid:11911 Workerman[ChatWorker.php] has been stopped
+2020-05-06 17:08:05 pid:12092 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-06 17:09:13 pid:12092 Workerman[ChatWorker.php] stopping ...
+2020-05-06 17:09:13 pid:12092 Workerman[ChatWorker.php] has been stopped
+2020-05-06 17:09:15 pid:12275 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-06 17:09:40 pid:12275 Workerman[ChatWorker.php] stopping ...
+2020-05-06 17:09:40 pid:12275 Workerman[ChatWorker.php] has been stopped
+2020-05-06 17:09:41 pid:12386 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-06 18:15:50 pid:12386 Workerman[ChatWorker.php] stopping ...
+2020-05-06 18:15:50 pid:12386 Workerman[ChatWorker.php] has been stopped
