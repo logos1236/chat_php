@@ -219,6 +219,7 @@ class User {
 
             if ($user['id'] > 0 && (password_verify($data_query['password'], $user['password']))) {
                 $result['user_id'] = $user['id'];
+                $result['user_name'] = $user['name'];
                 $result['auth_token'] = self::getRandomString(20);
 
                 $result['success'] = 1;

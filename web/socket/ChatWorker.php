@@ -18,10 +18,10 @@ $connections = []; // сюда будем складывать все подкл
 $worker = new Worker("websocket://0.0.0.0:27800");
 
 //=== При подключении
-$worker->onConnect = function($connection)
+$worker->onConnect = function($connection) use (&$connections)
 {
     // Эта функция выполняется при подключении пользователя к WebSocket-серверу
-    $connection->onWebSocketConnect = function($connection) 
+    $connection->onWebSocketConnect = function($connection) use (&$connections) 
     {
         /*$data_query = array(
             'action'=>'PublicMessage',
@@ -153,32 +153,33 @@ $worker->onConnect = function($connection)
 };*/
 
 //=== Эта функция выполняется при закрытии соединения
-/*$worker->onClose = function($connection) use(&$connections)
+$worker->onClose = function($connection) use(&$connections)
 {
     if (!isset($connections[$connection->id])) {
         return;
     }
     
-    // Удаляем соединение из списка
-    unset($connections[$connection->id]);
+    //=== Удаляем соединение из списка
+        unset($connections[$connection->id]);
     
-    // Оповещаем всех пользователей о выходе участника из чата
-    $messageData = [
-        'action' => 'Disconnected',
-        'user_author' => $connection->id,
-        //'userName' => $connection->userName,
-        //'gender' => $connection->gender,
-        //'userColor' => $connection->userColor
-    ];
-    $message = json_encode($messageData);
-    
-    foreach ($connections as $c) {
-        $c->send($message);
-    }
-};*/
+    //=== Оповещаем всех пользователей о выходе участника из чата
+        $data_query = array(
+            'chat_id'=>$messageData['chat_id'],
+            'user_author'=>$messageData['user_author'],
+            'message'=>"Пользователь покинул чат",
+        );
+        $message = array(
+            'type' => 'public_message',
+            'data' => Project\Chat::sendMessageArray($data_query)
+        );
+
+        foreach ($connections as $c) {
+            $c->send(json_encode($message));
+        }
+};
 
 //=== Пинг пользователя
-/*$worker->onWorkerStart = function($worker) use (&$connections)
+$worker->onWorkerStart = function($worker) use (&$connections)
 {
     $interval = 5; // пингуем каждые 5 секунд
     Timer::add($interval, function() use(&$connections) {
@@ -187,26 +188,31 @@ $worker->onConnect = function($connection)
             // и оповещаем всех участников об "отвалившемся" пользователе
             if ($c->pingWithoutResponseCount >= 3) {
                 unset($connections[$c->id]);
-                
-                $messageData = [
+                                
+                /*$messageData = [
                     'action' => 'ConnectionLost',
                     'user_author' => $c->id
                 ];
-                $message = json_encode($messageData);
+                $message = json_encode($messageData);*/
                 
                 $c->destroy(); // уничтожаем соединение
                 
-                foreach ($connections as $c) {
+                /*foreach ($connections as $c) {
                     $c->send($message);
-                }
+                }*/
             }
             else {
-                $c->send('{"action":"Ping"}');
+                $message = array(
+                    'type'=>'ping',
+                    'response_count'=>$c->pingWithoutResponseCount
+                );
+                $c->send(json_encode($message));
+
                 $c->pingWithoutResponseCount++; // увеличиваем счетчик пингов
             }
         }
     });
-};*/
+};
 
 //=== При отправке сообщения
 $worker->onMessage = function($connection, $message) use (&$connections)
@@ -220,7 +226,7 @@ $worker->onMessage = function($connection, $message) use (&$connections)
     //$toUserId = isset($messageData['toUserId']) ? (int) $messageData['toUserId'] : 0;
     $action = isset($messageData['action']) ? $messageData['action'] : '';
     
-    //=== Создать пользователя   
+    //=== Создаем пользователя   
         if ($action == 'create_user') {
             Project\Connection::connect();
             //=== Создаем пользователя
@@ -264,8 +270,9 @@ $worker->onMessage = function($connection, $message) use (&$connections)
             $result = Project\User::auth($data_query);
             
             if ($result['success']) {
-                $connection->auth_token = $result_auth['auth_token'];
-                $connection->user_id = $result_auth['user_id'];
+                $connection->auth_token = $result['auth_token'];
+                $connection->user_id = $result['user_id'];
+                $connection->user_name = $result['user_name'];
             }
             
             $message = array(
@@ -275,6 +282,26 @@ $worker->onMessage = function($connection, $message) use (&$connections)
             
             $connection->send(json_encode($message));
             Project\Connection::close();
+            
+            //=== Отправляем список пользователей всем
+                if ($result['success']) {
+                    $user_list['list'] = array();
+                    $user_list['count']=1;
+
+                    foreach ($connections as $c) {
+                        if ($c->user_name) {
+                            $user_list['list'][] = $c->user_name;
+                            $user_list['count']++;
+                        }
+                    }
+                    $message = array(
+                        'type'=>'user_list',
+                        'data'=>$user_list
+                    );
+                    foreach ($connections as $c) {
+                        $c->send(json_encode($message));
+                    }
+                }
         }    
         
     //=== Сообщение в общий чат
@@ -286,14 +313,21 @@ $worker->onMessage = function($connection, $message) use (&$connections)
                 'message'=>$messageData['message'],
             );
             Project\Chat::setMessage($data_query);
+            Project\Connection::close();
             
+            //=== Отправляем сообщение всем пользователям
             $message = array(
                 'type'=>'public_message',
                 'data'=>Project\Chat::sendMessageArray($data_query)
             );
-
-            $connection->send(json_encode($message));
-            Project\Connection::close();
+            foreach ($connections as $c) {
+                $c->send(json_encode($message));
+            }
+        }
+        
+    //=== При получении сообщения "Pong", обнуляем счетчик пингов    
+        if ($action == 'pong') {
+            $connection->pingWithoutResponseCount = 0;
         }
     
     
