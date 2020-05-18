@@ -176,6 +176,15 @@ class Chat {
         //=== Возвращаем значения
         return $result;
     }
+    
+    public static function sendMessageArray($item) {
+        if (!empty($item)) {
+            $result['list'][] = $item;
+            $result['count']=1;
+        }
+        
+        return $result;
+    }
 }
 
 ?>

@@ -572,3 +572,184 @@ Stack trace:
 2020-05-06 17:09:41 pid:12386 Workerman[ChatWorker.php] start in DEBUG mode
 2020-05-06 18:15:50 pid:12386 Workerman[ChatWorker.php] stopping ...
 2020-05-06 18:15:50 pid:12386 Workerman[ChatWorker.php] has been stopped
+2020-05-11 02:26:34 pid:3715 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-11 02:50:13 pid:3715 Workerman[ChatWorker.php] stopping ...
+2020-05-11 02:50:13 pid:3715 Workerman[ChatWorker.php] has been stopped
+2020-05-11 02:50:16 pid:4580 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-11 03:35:33 pid:4580 Workerman[ChatWorker.php] stopping ...
+2020-05-11 03:35:33 pid:4580 Workerman[ChatWorker.php] has been stopped
+2020-05-11 03:35:34 pid:5433 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-11 03:37:16 pid:5433 Workerman[ChatWorker.php] stopping ...
+2020-05-11 03:37:16 pid:5433 Workerman[ChatWorker.php] has been stopped
+2020-05-11 03:37:17 pid:5523 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-11 03:42:40 pid:5523 Workerman[ChatWorker.php] stopping ...
+2020-05-11 03:42:40 pid:5523 Workerman[ChatWorker.php] has been stopped
+2020-05-11 03:42:42 pid:5797 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-11 03:43:29 pid:5799 Exception: Empty user_author in /var/www/chat_server/chat_php/src/Essence/Chat.php:68
+Stack trace:
+#0 /var/www/chat_server/chat_php/web/socket/ChatWorker.php(44): Project\Chat::setMessage(Array)
+#1 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Protocols/Websocket.php(392): {closure}(Object(Workerman\Connection\TcpConnection), 'GET / HTTP/1.1\r...')
+#2 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Protocols/Websocket.php(57): Workerman\Protocols\Websocket::dealHandshake('GET / HTTP/1.1\r...', Object(Workerman\Connection\TcpConnection))
+#3 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Connection/TcpConnection.php(623): Workerman\Protocols\Websocket::input('GET / HTTP/1.1\r...', Object(Workerman\Connection\TcpConnection))
+#4 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Events/Select.php(292): Workerman\Connection\TcpConnection->baseRead(Resource id #31)
+#5 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Worker.php(2408): Workerman\Events\Select->loop()
+#6 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Worker.php(1541): Workerman\Worker->run()
+#7 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Worker.php(1345): Workerman\Worker::forkWorkersForLinux()
+#9 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Worker.php(546): Workerman\Worker::forkWorkers()
+#10 /var/www/chat_server/chat_php/web/socket/ChatWorker.php(269): Workerman\Worker::runAll()
+#11 {main}
+2020-05-11 03:43:29 pid:5799 Worker[5799] process terminated
+2020-05-11 03:43:29 pid:5797 worker[none:5799] exit with status 64000
+2020-05-11 03:43:39 pid:5875 Exception: Empty user_author in /var/www/chat_server/chat_php/src/Essence/Chat.php:68
+Stack trace:
+#0 /var/www/chat_server/chat_php/web/socket/ChatWorker.php(44): Project\Chat::setMessage(Array)
+#1 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Protocols/Websocket.php(392): {closure}(Object(Workerman\Connection\TcpConnection), 'GET / HTTP/1.1\r...')
+#2 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Protocols/Websocket.php(57): Workerman\Protocols\Websocket::dealHandshake('GET / HTTP/1.1\r...', Object(Workerman\Connection\TcpConnection))
+#3 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Connection/TcpConnection.php(623): Workerman\Protocols\Websocket::input('GET / HTTP/1.1\r...', Object(Workerman\Connection\TcpConnection))
+#4 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Events/Select.php(292): Workerman\Connection\TcpConnection->baseRead(Resource id #32)
+#5 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Worker.php(2408): Workerman\Events\Select->loop()
+#6 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Worker.php(1541): Workerman\Worker->run()
+#7 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Worker.php(1345): Workerman\Worker::forkWorkersForLinux()
+#9 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Worker.php(1675): Workerman\Worker::forkWorkers()
+#10 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Worker.php(1624): Workerman\Worker::monitorWorkersForLinux()
+#11 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Worker.php(548): Workerman\Worker::monitorWorkers()
+#12 /var/www/chat_server/chat_php/web/socket/ChatWorker.php(269): Workerman\Worker::runAll()
+#13 {main}
+2020-05-11 03:43:39 pid:5875 Worker[5875] process terminated
+2020-05-11 03:43:39 pid:5797 worker[none:5875] exit with status 64000
+2020-05-11 03:43:53 pid:5950 Exception: Empty user_author in /var/www/chat_server/chat_php/src/Essence/Chat.php:68
+Stack trace:
+#0 /var/www/chat_server/chat_php/web/socket/ChatWorker.php(44): Project\Chat::setMessage(Array)
+#1 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Protocols/Websocket.php(392): {closure}(Object(Workerman\Connection\TcpConnection), 'GET / HTTP/1.1\r...')
+#2 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Protocols/Websocket.php(57): Workerman\Protocols\Websocket::dealHandshake('GET / HTTP/1.1\r...', Object(Workerman\Connection\TcpConnection))
+#3 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Connection/TcpConnection.php(623): Workerman\Protocols\Websocket::input('GET / HTTP/1.1\r...', Object(Workerman\Connection\TcpConnection))
+#4 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Events/Select.php(292): Workerman\Connection\TcpConnection->baseRead(Resource id #33)
+#5 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Worker.php(2408): Workerman\Events\Select->loop()
+#6 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Worker.php(1541): Workerman\Worker->run()
+#7 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Worker.php(1345): Workerman\Worker::forkWorkersForLinux()
+#9 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Worker.php(1675): Workerman\Worker::forkWorkers()
+#10 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Worker.php(1624): Workerman\Worker::monitorWorkersForLinux()
+#11 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Worker.php(548): Workerman\Worker::monitorWorkers()
+#12 /var/www/chat_server/chat_php/web/socket/ChatWorker.php(269): Workerman\Worker::runAll()
+#13 {main}
+2020-05-11 03:43:53 pid:5950 Worker[5950] process terminated
+2020-05-11 03:43:53 pid:5797 worker[none:5950] exit with status 64000
+2020-05-11 03:44:48 pid:5797 Workerman[ChatWorker.php] stopping ...
+2020-05-11 03:44:48 pid:5797 Workerman[ChatWorker.php] has been stopped
+2020-05-11 03:44:49 pid:6039 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-11 03:45:43 pid:6040 Exception: Empty user_author in /var/www/chat_server/chat_php/src/Essence/Chat.php:68
+Stack trace:
+#0 /var/www/chat_server/chat_php/web/socket/ChatWorker.php(44): Project\Chat::setMessage(Array)
+#1 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Protocols/Websocket.php(392): {closure}(Object(Workerman\Connection\TcpConnection), 'GET / HTTP/1.1\r...')
+#2 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Protocols/Websocket.php(57): Workerman\Protocols\Websocket::dealHandshake('GET / HTTP/1.1\r...', Object(Workerman\Connection\TcpConnection))
+#3 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Connection/TcpConnection.php(623): Workerman\Protocols\Websocket::input('GET / HTTP/1.1\r...', Object(Workerman\Connection\TcpConnection))
+#4 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Events/Select.php(292): Workerman\Connection\TcpConnection->baseRead(Resource id #31)
+#5 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Worker.php(2408): Workerman\Events\Select->loop()
+#6 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Worker.php(1541): Workerman\Worker->run()
+#7 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Worker.php(1345): Workerman\Worker::forkWorkersForLinux()
+#9 /var/www/chat_server/chat_php/src/Workerman-master/vendor/workerman/workerman/Worker.php(546): Workerman\Worker::forkWorkers()
+#10 /var/www/chat_server/chat_php/web/socket/ChatWorker.php(269): Workerman\Worker::runAll()
+#11 {main}
+2020-05-11 03:45:43 pid:6040 Worker[6040] process terminated
+2020-05-11 03:45:43 pid:6039 worker[none:6040] exit with status 64000
+2020-05-11 03:45:55 pid:6039 Workerman[ChatWorker.php] stopping ...
+2020-05-11 03:45:55 pid:6039 Workerman[ChatWorker.php] has been stopped
+2020-05-11 03:46:51 pid:6207 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-11 03:47:39 pid:6207 Workerman[ChatWorker.php] stopping ...
+2020-05-11 03:47:39 pid:6207 Workerman[ChatWorker.php] has been stopped
+2020-05-11 03:47:53 pid:6287 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-11 03:48:37 pid:6287 Workerman[ChatWorker.php] stopping ...
+2020-05-11 03:48:37 pid:6287 Workerman[ChatWorker.php] has been stopped
+2020-05-11 03:48:38 pid:6363 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-11 04:08:09 pid:6363 Workerman[ChatWorker.php] stopping ...
+2020-05-11 04:08:09 pid:6363 Workerman[ChatWorker.php] has been stopped
+2020-05-11 18:57:06 pid:13143 Workerman[web/socket/ChatWorker.php] start in DEBUG mode
+2020-05-14 01:09:29 pid:23030 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-15 01:12:21 pid:19797 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-15 01:14:31 pid:19797 Workerman[ChatWorker.php] stopping ...
+2020-05-15 01:14:31 pid:19797 Workerman[ChatWorker.php] has been stopped
+2020-05-15 01:14:32 pid:19957 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-15 01:15:51 pid:19957 Workerman[ChatWorker.php] stopping ...
+2020-05-15 01:15:51 pid:19957 Workerman[ChatWorker.php] has been stopped
+2020-05-15 01:15:53 pid:20052 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-15 01:16:25 pid:20052 Workerman[ChatWorker.php] stopping ...
+2020-05-15 01:16:25 pid:20052 Workerman[ChatWorker.php] has been stopped
+2020-05-15 01:43:16 pid:21415 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-15 02:25:43 pid:21415 Workerman[ChatWorker.php] stopping ...
+2020-05-15 02:25:43 pid:21415 Workerman[ChatWorker.php] has been stopped
+2020-05-15 02:25:48 pid:22528 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-15 02:27:36 pid:22528 Workerman[ChatWorker.php] stopping ...
+2020-05-15 02:27:36 pid:22528 Workerman[ChatWorker.php] has been stopped
+2020-05-15 02:27:37 pid:22657 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-15 02:46:50 pid:22657 Workerman[ChatWorker.php] stopping ...
+2020-05-15 02:46:50 pid:22657 Workerman[ChatWorker.php] has been stopped
+2020-05-15 02:46:52 pid:23532 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-15 02:51:13 pid:23532 Workerman[ChatWorker.php] stopping ...
+2020-05-15 02:51:13 pid:23532 Workerman[ChatWorker.php] has been stopped
+2020-05-17 00:10:32 pid:13166 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-17 02:19:06 pid:13166 Workerman[ChatWorker.php] stopping ...
+2020-05-17 02:19:06 pid:13166 Workerman[ChatWorker.php] has been stopped
+2020-05-17 23:41:03 pid:4291 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-18 00:41:28 pid:4291 Workerman[ChatWorker.php] stopping ...
+2020-05-18 00:41:28 pid:4291 Workerman[ChatWorker.php] has been stopped
+2020-05-18 00:41:30 pid:8039 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-18 00:51:42 pid:8039 Workerman[ChatWorker.php] stopping ...
+2020-05-18 00:51:42 pid:8039 Workerman[ChatWorker.php] has been stopped
+2020-05-18 00:51:43 pid:8324 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-18 01:08:43 pid:8324 Workerman[ChatWorker.php] stopping ...
+2020-05-18 01:08:43 pid:8324 Workerman[ChatWorker.php] has been stopped
+2020-05-18 01:08:44 pid:8709 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-18 01:11:04 pid:8709 Workerman[ChatWorker.php] stopping ...
+2020-05-18 01:11:04 pid:8709 Workerman[ChatWorker.php] has been stopped
+2020-05-18 01:11:05 pid:8859 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-18 01:12:14 pid:8859 Workerman[ChatWorker.php] stopping ...
+2020-05-18 01:12:14 pid:8859 Workerman[ChatWorker.php] has been stopped
+2020-05-18 01:14:33 pid:9007 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-18 01:15:01 pid:9007 Workerman[ChatWorker.php] stopping ...
+2020-05-18 01:15:01 pid:9007 Workerman[ChatWorker.php] has been stopped
+2020-05-18 01:16:01 pid:9101 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-18 01:17:45 pid:9101 Workerman[ChatWorker.php] stopping ...
+2020-05-18 01:17:45 pid:9101 Workerman[ChatWorker.php] has been stopped
+2020-05-18 01:17:46 pid:9202 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-18 01:18:16 pid:9202 Workerman[ChatWorker.php] stopping ...
+2020-05-18 01:18:16 pid:9202 Workerman[ChatWorker.php] has been stopped
+2020-05-18 01:18:46 pid:9283 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-18 01:21:35 pid:9283 Workerman[ChatWorker.php] stopping ...
+2020-05-18 01:21:35 pid:9283 Workerman[ChatWorker.php] has been stopped
+2020-05-18 01:21:37 pid:9374 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-18 01:23:21 pid:9374 Workerman[ChatWorker.php] stopping ...
+2020-05-18 01:23:21 pid:9374 Workerman[ChatWorker.php] has been stopped
+2020-05-18 01:24:09 pid:9547 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-18 01:25:23 pid:9547 Workerman[ChatWorker.php] stopping ...
+2020-05-18 01:25:23 pid:9547 Workerman[ChatWorker.php] has been stopped
+2020-05-18 01:27:03 pid:9647 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-18 01:34:44 pid:9647 Workerman[ChatWorker.php] stopping ...
+2020-05-18 01:34:44 pid:9647 Workerman[ChatWorker.php] has been stopped
+2020-05-18 01:34:45 pid:9781 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-18 01:35:25 pid:9781 Workerman[ChatWorker.php] stopping ...
+2020-05-18 01:35:25 pid:9781 Workerman[ChatWorker.php] has been stopped
+2020-05-18 01:35:26 pid:9859 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-18 01:45:01 pid:9859 Workerman[ChatWorker.php] stopping ...
+2020-05-18 01:45:01 pid:9859 Workerman[ChatWorker.php] has been stopped
+2020-05-18 01:45:02 pid:10215 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-18 02:41:04 pid:10215 Workerman[ChatWorker.php] stopping ...
+2020-05-18 02:41:04 pid:10215 Workerman[ChatWorker.php] has been stopped
+2020-05-18 03:47:26 pid:2969 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-18 04:40:17 pid:2969 Workerman[ChatWorker.php] stopping ...
+2020-05-18 04:40:17 pid:2969 Workerman[ChatWorker.php] has been stopped
+2020-05-18 04:40:18 pid:4204 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-18 04:45:30 pid:4204 Workerman[ChatWorker.php] stopping ...
+2020-05-18 04:45:30 pid:4204 Workerman[ChatWorker.php] has been stopped
+2020-05-18 04:45:31 pid:4360 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-18 05:15:48 pid:4360 Workerman[ChatWorker.php] stopping ...
+2020-05-18 05:15:48 pid:4360 Workerman[ChatWorker.php] has been stopped
+2020-05-18 05:15:49 pid:4813 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-18 05:29:57 pid:4813 Workerman[ChatWorker.php] stopping ...
+2020-05-18 05:29:57 pid:4813 Workerman[ChatWorker.php] has been stopped
+2020-05-18 05:29:58 pid:5175 Workerman[ChatWorker.php] start in DEBUG mode
+2020-05-18 05:45:53 pid:5175 Workerman[ChatWorker.php] stopping ...
+2020-05-18 05:45:53 pid:5175 Workerman[ChatWorker.php] has been stopped

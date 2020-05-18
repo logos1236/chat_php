@@ -15,7 +15,6 @@ $connections = []; // сюда будем складывать все подкл
 
 // Стартуем WebSocket-сервер на порту 27800
 //=== php -c /etc/php/7.2/apache2/php.ini ChatWorker.php start
-//$worker = new Worker("websocket://0.0.0.0:27800");
 $worker = new Worker("websocket://0.0.0.0:27800");
 
 //=== При подключении
@@ -25,15 +24,33 @@ $worker->onConnect = function($connection)
     $connection->onWebSocketConnect = function($connection) 
     {
         /*$data_query = array(
+            'action'=>'PublicMessage',
             'chat_id'=>1,
             'user_author'=>1,
-            'message'=>"Hello World!\n",
+            'message'=>"Hello World!",
         );
-        Project\Chat::setMessage($data_query);*/
+        Project\Chat::setMessage($data_query);
         
-        //echo "Hello World!\n"; // все сообщения выводятся в терминал сервера
+        echo "Hello World!\n"; // все сообщения выводятся в терминал сервера
         //print_r($_GET);
-        //$connection->send("Hello World!"); // а это сообщение будет отправлено клиенту
+        $connection->send($data_query); // а это сообщение будет отправлено клиенту*/
+        
+        /*$data_query = array(
+            'chat_id'=>1,
+            'user_author'=>1,
+            'message'=>"Welcome to chat!",
+        );
+        //Project\Chat::setMessage($data_query);
+        
+        $connection->send(json_encode(Project\Chat::sendMessageArray($data_query)));*/
+        
+        //=== Добавляем соединение в список
+        //$connection->userName = $userName;
+        //$connection->gender = $gender;
+        //$connection->userColor = $userColor;
+        $connection->pingWithoutResponseCount = 0; // счетчик безответных пингов
+        
+        $connections[$connection->id] = $connection;
     };
 };
 
@@ -195,7 +212,7 @@ $worker->onConnect = function($connection)
 $worker->onMessage = function($connection, $message) use (&$connections)
 {
     //echo "Message!\n";
-    echo $message;
+    //echo $message;
     
     // распаковываем json
     $messageData = json_decode($message, true);
@@ -203,18 +220,81 @@ $worker->onMessage = function($connection, $message) use (&$connections)
     //$toUserId = isset($messageData['toUserId']) ? (int) $messageData['toUserId'] : 0;
     $action = isset($messageData['action']) ? $messageData['action'] : '';
     
-    print_r($messageData);
-    
-    if ($action == 'PublicMessage') {
-        echo $message;
+    //=== Создать пользователя   
+        if ($action == 'create_user') {
+            Project\Connection::connect();
+            //=== Создаем пользователя
+                $data_query = array(
+                    'name' => $messageData['name'],
+                    'password' => $messageData['password'],
+                    'password_confirm' => $messageData['password_confirm'],
+                );
+                $result = Project\User::add($data_query);
+
+            //=== Авторизуем пользователя
+                if ($result['success']) {
+                    $data_query = array(
+                        'name' => $messageData['name'],
+                        'password' => $messageData['password'],
+                    );
+                    $result = Project\User::auth($data_query);
+                    if ($result['success']) {
+                        $connection->auth_token = $result['auth_token'];
+                        $connection->user_id = $result['user_id'];
+                    }
+                }
+
+            $message = array(
+                'type'=>'auth',
+                'data'=>$result
+            );
+            
+            $connection->send(json_encode($message));
+            Project\Connection::close();
+        }
         
-        $data_query = array(
-            'chat_id'=>$messageData['chat_id'],
-            'user_author'=>$messageData['user_author'],
-            'message'=>$messageData['message'],
-        );
-        Project\Chat::setMessage($data_query);
-    }
+    //=== Авторизуем пользователя   
+        if ($action == 'auth_user') {
+            Project\Connection::connect();
+            
+            $data_query = array(
+                'name'=>$messageData['name'],
+                'password'=>$messageData['password'],
+            );
+            $result = Project\User::auth($data_query);
+            
+            if ($result['success']) {
+                $connection->auth_token = $result_auth['auth_token'];
+                $connection->user_id = $result_auth['user_id'];
+            }
+            
+            $message = array(
+                'type'=>'auth',
+                'data'=>$result
+            );
+            
+            $connection->send(json_encode($message));
+            Project\Connection::close();
+        }    
+        
+    //=== Сообщение в общий чат
+        if ($action == 'public_message') {
+            Project\Connection::connect();
+            $data_query = array(
+                'chat_id'=>$messageData['chat_id'],
+                'user_author'=>$messageData['user_author'],
+                'message'=>$messageData['message'],
+            );
+            Project\Chat::setMessage($data_query);
+            
+            $message = array(
+                'type'=>'public_message',
+                'data'=>Project\Chat::sendMessageArray($data_query)
+            );
+
+            $connection->send(json_encode($message));
+            Project\Connection::close();
+        }
     
     
     /*if ($action == 'Pong') {
